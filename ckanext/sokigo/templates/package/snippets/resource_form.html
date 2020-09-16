@@ -1,0 +1,46 @@
+{% ckan_extends %}
+
+{% block basic_fields %}
+    {{ super() }}
+
+    {% block basic_fields_resource_language %}
+      {{ form.input('resource_language', id='field-resource-language', label=_('Language of resource'), placeholder=_('Language of resource'), value=data.resource_language, error=errors.resource_language, classes=['control-full']) }}
+    {% endblock %}
+
+    {% block basic_fields_completeness %}
+      {{ form.input('completeness', id='field-completeness', label=_('Completeness'), placeholder=_('Completeness'), value=data.completeness, error=errors.completeness, classes=['control-full']) }}
+    {% endblock %}
+
+    {% block basic_fields_classification %}
+      {{ form.input('classification', id='field-classification', label=_('Classification'), placeholder=_('Classification'), value=data.classification, error=errors.classification, classes=['control-full']) }}
+    {% endblock %}
+
+    {% block basic_fields_update_frequency %}
+      {{ form.input('update_frequency', id='field-update-frequency', label=_('Update frequency'), placeholder=_('update frequency'), value=data.update_frequency, error=errors.update_frequency, classes=['control-full']) }}
+    {% endblock %}
+
+
+    {% block basic_fields_area %}
+      {{ form.input('area', id='field-area', label=_('Area'), placeholder=_('Area'), value=data.area, error=errors.area, classes=['control-full']) }}
+    {% endblock %}
+
+
+    {% block basic_fields_coordinate_system %}
+      {{ form.input('coordinate_system', id='field-coordinate-system', label=_('Coordinate system'), placeholder=_('coordinate system'), value=data.coordinate_system, error=errors.coordinate_system, classes=['control-full']) }}
+    {% endblock %}
+
+
+    {% block basic_fields_scale_factor %}
+      {{ form.input('scale_factor', id='field-scale-factor', label=_('Scale factor'), placeholder=_('Scale factor'), value=data.scale_factor, error=errors.scale_factor, classes=['control-full']) }}
+    {% endblock %}
+
+    {% block basic_fields_z_min %}
+      {{ form.input('z_min', id='field-z-min', label=_('Z-Min'), placeholder=_('z-min'), value=data.z_min, error=errors.z_min, classes=['control-full']) }}
+    {% endblock %}
+
+    {% block basic_fields_z_max %}
+      {{ form.input('z_max', id='field-z-max', label=_('Z-Max'), placeholder=_('z-max'), value=data.z_max, error=errors.z_max, classes=['control-full']) }}
+    {% endblock %}
+
+
+{% endblock %}
