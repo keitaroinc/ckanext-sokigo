@@ -127,3 +127,88 @@ msgstr ""
 msgid "Categories and keywords"
 msgstr "Ämnesområde och nyckelord"
 
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:6
+msgid "http://example.com/dataset.json"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:10
+msgid "1.0"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:14
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:20
+msgid "Joe Bloggs"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
+msgid "Author Email"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
+msgid "joe@example.com"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
+msgid "Maintainer Email"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:26
+msgid "Language of metadata"
+msgstr "Språk i metadata"
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:26
+msgid "Language"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:7
+msgid "Language of resource"
+msgstr "Språk i resurs"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:11
+msgid "Completeness"
+msgstr "Fullständighet"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:15
+msgid "Classification"
+msgstr "Klassificering"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:19
+msgid "Update frequency"
+msgstr "Uppdateringsfrekvens"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:19
+msgid "update frequency"
+msgstr "Uppdateringsfrekvens"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:24
+msgid "Area"
+msgstr "Område"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:29
+msgid "Coordinate system"
+msgstr "Koordinatsystem"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:29
+msgid "coordinate system"
+msgstr "Koordinatsystem"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:34
+msgid "Scale factor"
+msgstr "Skalfaktor"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:38
+msgid "Z-Min"
+msgstr "Z-Min"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:38
+msgid "z-min"
+msgstr "Z-Min"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+msgid "Z-Max"
+msgstr "Z-Max"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+msgid "z-max"
+msgstr "Z-Max"

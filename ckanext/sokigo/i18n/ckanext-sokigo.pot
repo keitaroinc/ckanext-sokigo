@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-sokigo 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-09-16 21:03+0200\n"
+"POT-Creation-Date: 2020-09-16 23:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+
+#: ckanext/sokigo/templates/home/snippets/promoted.html:3
+msgid "Open data portal"
+msgstr ""
 
 #: ckanext/sokigo/templates/package/resource_read.html:10
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:2
@@ -96,20 +100,24 @@ msgid ""
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:14
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:6
 msgid "Source"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:25
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:30
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:14
 msgid "Author"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:37
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:42
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:20
 msgid "Maintainer"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:49
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:10
 msgid "Version"
 msgstr ""
 
@@ -119,6 +127,92 @@ msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:62
 msgid "Last Updated"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:6
+msgid "http://example.com/dataset.json"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:10
+msgid "1.0"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:14
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:20
+msgid "Joe Bloggs"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
+msgid "Author Email"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
+msgid "joe@example.com"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
+msgid "Maintainer Email"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:26
+msgid "Language of metadata"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:26
+msgid "Language"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:7
+msgid "Language of resource"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:11
+msgid "Completeness"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:15
+msgid "Classification"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:19
+msgid "Update frequency"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:19
+msgid "update frequency"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:24
+msgid "Area"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:29
+msgid "Coordinate system"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:29
+msgid "coordinate system"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:34
+msgid "Scale factor"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:38
+msgid "Z-Min"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:38
+msgid "z-min"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+msgid "Z-Max"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+msgid "z-max"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/tags.html:3
