@@ -1,0 +1,129 @@
+# Northern Sami translations for ckanext-sokigo.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the ckanext-sokigo
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-sokigo 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-09-16 21:02+0200\n"
+"PO-Revision-Date: 2020-09-16 21:03+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/sokigo/templates/package/resource_read.html:10
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:2
+msgid "Information about metadata"
+msgstr "Information om metadata"
+
+#: ckanext/sokigo/templates/package/resource_read.html:14
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:6
+msgid "Field"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:15
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:7
+msgid "Value"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:20
+msgid "Data last updated"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:21
+#: ckanext/sokigo/templates/package/resource_read.html:25
+#: ckanext/sokigo/templates/package/resource_read.html:29
+#: ckanext/sokigo/templates/package/resource_read.html:33
+msgid "unknown"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:24
+msgid "Metadata last updated"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:28
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:70
+msgid "Created"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:32
+msgid "Format"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:36
+msgid "License"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:53
+msgid "Geographical coverage"
+msgstr "Geografisk utbredning"
+
+#: ckanext/sokigo/templates/package/resource_read.html:88
+msgid "There are no views created for this resource yet."
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:92
+msgid "Not seeing the views you were expecting?"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:94
+msgid "Click here for more information."
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:97
+msgid "Here are some reasons you may not be seeing expected views:"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:99
+msgid "No view has been created that is suitable for this resource"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:100
+msgid "The site administrators may not have enabled the relevant view plugins"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/resource_read.html:101
+msgid ""
+"If a view requires the DataStore, the DataStore plugin may not be "
+"enabled, or the data may not have been pushed to the DataStore, or the "
+"DataStore hasn't finished processing the data yet"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:14
+msgid "Source"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:25
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:30
+msgid "Author"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:37
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:42
+msgid "Maintainer"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:49
+msgid "Version"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:56
+msgid "State"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/additional_info.html:62
+msgid "Last Updated"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/tags.html:3
+msgid "Categories and keywords"
+msgstr "Ämnesområde och nyckelord"
+
