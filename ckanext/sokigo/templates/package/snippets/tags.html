@@ -1,0 +1,8 @@
+{% if tags %}
+{% block tags_title %}
+<h3> {% trans %}Categories and keywords{% endtrans %} </h3>
+{% endblock %}
+<section class="tags">
+    {% snippet 'snippets/tag_list.html', tags=tags, _class='tag-list well' %}
+</section>
+{% endif %}
