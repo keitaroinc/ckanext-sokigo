@@ -1,28 +1,40 @@
-import ckan.plugins as plugins
-import ckan.plugins.toolkit as toolkit
+import ckan.plugins as p
+import ckan.plugins.toolkit as t
 from ckan.lib.plugins import DefaultTranslation
 
 
-class SokigoPlugin(plugins.SingletonPlugin, DefaultTranslation, toolkit.DefaultDatasetForm):
-    plugins.implements(plugins.IConfigurer)
-    plugins.implements(plugins.ITranslation)
-    plugins.implements(plugins.IDatasetForm)
+class SokigoPlugin(p.SingletonPlugin, t.DefaultDatasetForm, DefaultTranslation):
+    p.implements(p.IConfigurer)
+    p.implements(p.ITranslation)
+    p.implements(p.IDatasetForm)
+    p.implements(p.IRoutes, inherit=True)
 
     # IConfigurer
 
     def update_config(self, config_):
-        toolkit.add_template_directory(config_, 'templates')
-        toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('fanstatic', 'sokigo')
+        t.add_template_directory(config_, 'templates')
+        t.add_public_directory(config_, 'public')
+        t.add_resource('fanstatic', 'sokigo')
+
+    # IRoutes
+
+    def before_map(self, map):
+
+        map.connect('copy', '/dataset/copy/{id}',
+                    controller='ckanext.sokigo.controller:CopyController',
+                    action='copy')
+
+        return map
 
     # IDatasetForm
-    def _modify_package_schema(self, schema):
-        defaults = [toolkit.get_validator('ignore_missing')]
-        package_defaults = [toolkit.get_validator('ignore_missing'),
-                            toolkit.get_converter('convert_to_extras')]
 
-        mandatory_defaults = [toolkit.get_validator('not_empty'),
-                            toolkit.get_converter('convert_to_extras')]
+    def _modify_package_schema(self, schema):
+        defaults = [t.get_validator('ignore_missing')]
+        package_defaults = [t.get_validator('ignore_missing'),
+                            t.get_converter('convert_to_extras')]
+
+        mandatory_defaults = [t.get_validator('not_empty'),
+                            t.get_converter('convert_to_extras')]
 
         schema.update({
             'metadata_language': package_defaults,
@@ -52,11 +64,11 @@ class SokigoPlugin(plugins.SingletonPlugin, DefaultTranslation, toolkit.DefaultD
 
     def show_package_schema(self):
         schema = super(SokigoPlugin, self).show_package_schema()
-        defaults = [toolkit.get_validator('ignore_missing')]
-        package_defaults = [toolkit.get_converter('convert_from_extras'),
-                            toolkit.get_validator('ignore_missing')]
-        mandatory_defaults = [toolkit.get_validator('not_empty'),
-                            toolkit.get_converter('convert_from_extras')]
+        defaults = [t.get_validator('ignore_missing')]
+        package_defaults = [t.get_converter('convert_from_extras'),
+                            t.get_validator('ignore_missing')]
+        mandatory_defaults = [t.get_validator('not_empty'),
+                            t.get_converter('convert_from_extras')]
 
         schema.update({
             'metadata_language': package_defaults,
