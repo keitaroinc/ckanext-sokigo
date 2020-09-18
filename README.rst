@@ -32,26 +32,29 @@
 ckanext-sokigo
 =============
 
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
+This extension offers the following functionality::
+
+   * customized english and swedish translations for the dataset and resource templates
+
+   * re-ordered the default design of the dataset and resource templates
+
+   * "copy dataset" feature that enables faster creation of new datasets based on existing ones
+
+   * customized home page that contains GeoDirekt logo
+
+   * enriched dataset and resources with additional metadata fields
 
 
 ------------
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
+This extension is developed and compatible with CKAN version 2.8.5
 
 
 ------------
 Installation
 ------------
-
-.. Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
 
 To install ckanext-sokigo:
 
@@ -61,7 +64,7 @@ To install ckanext-sokigo:
 
 2. Install the ckanext-sokigo Python package into your virtual environment::
 
-     pip install ckanext-sokigo
+     pip install -e ckanext-sokigo
 
 3. Add ``sokigo`` to the ``ckan.plugins`` setting in your CKAN
    config file (by default the config file is located at
@@ -76,12 +79,7 @@ To install ckanext-sokigo:
 Config Settings
 ---------------
 
-Document any optional config settings here. For example::
-
-    # The minimum number of hours to wait before re-checking a resource
-    # (optional, default: 24).
-    ckanext.sokigo.some_setting = some_default_value
-
+No additional config settings are needed to use the sokigo extension
 
 ------------------------
 Development Installation
@@ -111,56 +109,28 @@ coverage installed in your virtualenv (``pip install coverage``) then run::
 
 
 ---------------------------------
-Registering ckanext-sokigo on PyPI
+Translating the extension
 ---------------------------------
 
-ckanext-sokigo should be availabe on PyPI as
-https://pypi.python.org/pypi/ckanext-sokigo. If that link doesn't work, then
-you can register the project on PyPI for the first time by following these
-steps:
+The English and Swedish translations for this extensions are located in: `ckanext/sokigo/i18n/`
 
-1. Create a source distribution of the project::
+In order to further enrich or update existing translations edit the ".po" catalog files. Below you can find a reference to the commands related to the translation:
 
-     python setup.py sdist
+To initialize new language type::
 
-2. Register the project::
+     python setup.py init_catalog -l <LANG>
 
-     python setup.py register
+To update existing catalog type::
 
-3. Upload the source distribution to PyPI::
+     python setup.py update_catalog
 
-     python setup.py sdist upload
+To extract messages type::
 
-4. Tag the first release of the project on GitHub with the version number from
-   the ``setup.py`` file. For example if the version number in ``setup.py`` is
-   0.0.1 then do::
+     python setup.py extract_messages
 
-       git tag 0.0.1
-       git push --tags
+To compile the translations type::
+
+       python setup.py compile_catalog
 
 
-----------------------------------------
-Releasing a New Version of ckanext-sokigo
-----------------------------------------
 
-ckanext-sokigo is availabe on PyPI as https://pypi.python.org/pypi/ckanext-sokigo.
-To publish a new version to PyPI follow these steps:
-
-1. Update the version number in the ``setup.py`` file.
-   See `PEP 440 <http://legacy.python.org/dev/peps/pep-0440/#public-version-identifiers>`_
-   for how to choose version numbers.
-
-2. Create a source distribution of the new version::
-
-     python setup.py sdist
-
-3. Upload the source distribution to PyPI::
-
-     python setup.py sdist upload
-
-4. Tag the new release of the project on GitHub with the version number from
-   the ``setup.py`` file. For example if the version number in ``setup.py`` is
-   0.0.2 then do::
-
-       git tag 0.0.2
-       git push --tags
