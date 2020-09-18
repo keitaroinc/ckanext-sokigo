@@ -32,17 +32,17 @@
 ckanext-sokigo
 =============
 
-This extension offers the following functionality::
+This extension offers the following functionality:
 
-   * customized english and swedish translations for the dataset and resource templates
+* customized english and swedish translations for the dataset and resource templates
 
-   * re-ordered the default design of the dataset and resource templates
+* re-ordered the default design of the dataset and resource templates
 
-   * "copy dataset" feature that enables faster creation of new datasets based on existing ones
+* "copy dataset" feature that enables faster creation of new datasets based on existing ones
 
-   * customized home page that contains GeoDirekt logo
+* customized home page that contains GeoDirekt logo
 
-   * enriched dataset and resources with additional metadata fields
+* enriched dataset and resources with additional metadata fields
 
 
 ------------
