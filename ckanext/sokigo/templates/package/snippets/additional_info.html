@@ -22,24 +22,24 @@
 
         {% if pkg_dict.author_email %}
           <tr>
-            <th scope="row" class="dataset-label">{{ _("Author") }}</th>
+            <th scope="row" class="dataset-label">{{ _("Metadata Owner Email") }}</th>
             <td class="dataset-details" property="dc:creator">{{ h.mail_to(email_address=pkg_dict.author_email, name=pkg_dict.author) }}</td>
           </tr>
         {% elif pkg_dict.author %}
           <tr>
-            <th scope="row" class="dataset-label">{{ _("Author") }}</th>
+            <th scope="row" class="dataset-label">{{ _("Metadata Owner") }}</th>
             <td class="dataset-details" property="dc:creator">{{ pkg_dict.author }}</td>
           </tr>
         {% endif %}
 
         {% if pkg_dict.maintainer_email %}
           <tr>
-            <th scope="row" class="dataset-label">{{ _('Maintainer') }}</th>
+            <th scope="row" class="dataset-label">{{ _('Metadata Contact Email') }}</th>
             <td class="dataset-details" property="dc:contributor">{{ h.mail_to(email_address=pkg_dict.maintainer_email, name=pkg_dict.maintainer) }}</td>
           </tr>
         {% elif pkg_dict.maintainer %}
           <tr>
-            <th scope="row" class="dataset-label">{{ _('Maintainer') }}</th>
+            <th scope="row" class="dataset-label">{{ _('Metadata Contact') }}</th>
             <td class="dataset-details" property="dc:contributor">{{ pkg_dict.maintainer }}</td>
           </tr>
         {% endif %}

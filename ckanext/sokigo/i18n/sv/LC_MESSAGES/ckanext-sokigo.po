@@ -1,4 +1,4 @@
-# Northern Sami translations for ckanext-sokigo.
+# Swedish translations for ckanext-sokigo.
 # Copyright (C) 2020 ORGANIZATION
 # This file is distributed under the same license as the ckanext-sokigo
 # project.
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-sokigo 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-09-16 21:02+0200\n"
-"PO-Revision-Date: 2020-09-16 21:03+0200\n"
+"POT-Creation-Date: 2020-09-18 09:00+0200\n"
+"PO-Revision-Date: 2020-09-18 09:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sv\n"
 "Language-Team: sv <LL@li.org>\n"
@@ -19,6 +19,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
+#: ckanext/sokigo/controller.py:33
+msgid "Unauthorized to copy this package"
+msgstr ""
+
+#: ckanext/sokigo/templates/home/snippets/promoted.html:3
+msgid "Open data portal"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/read_base.html:10
+msgid "Copy"
+msgstr "Kopiera"
+
 #: ckanext/sokigo/templates/package/resource_read.html:10
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:2
 msgid "Information about metadata"
@@ -27,12 +39,12 @@ msgstr "Information om metadata"
 #: ckanext/sokigo/templates/package/resource_read.html:14
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:6
 msgid "Field"
-msgstr ""
+msgstr "Fält"
 
 #: ckanext/sokigo/templates/package/resource_read.html:15
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:7
 msgid "Value"
-msgstr ""
+msgstr "Värde"
 
 #: ckanext/sokigo/templates/package/resource_read.html:20
 msgid "Data last updated"
@@ -52,43 +64,45 @@ msgstr ""
 #: ckanext/sokigo/templates/package/resource_read.html:28
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:70
 msgid "Created"
-msgstr ""
+msgstr "Skapad datum"
 
 #: ckanext/sokigo/templates/package/resource_read.html:32
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:39
 msgid "Format"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/resource_read.html:36
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:30
 msgid "License"
-msgstr ""
+msgstr "Licens"
 
 #: ckanext/sokigo/templates/package/resource_read.html:53
 msgid "Geographical coverage"
-msgstr "Geografisk utbredning"
+msgstr ""
 
 #: ckanext/sokigo/templates/package/resource_read.html:88
 msgid "There are no views created for this resource yet."
-msgstr ""
+msgstr "Inga vyer har skapats för resursen."
 
 #: ckanext/sokigo/templates/package/resource_read.html:92
 msgid "Not seeing the views you were expecting?"
-msgstr ""
+msgstr "Hittar du inte vyerna du förväntade dig?"
 
 #: ckanext/sokigo/templates/package/resource_read.html:94
 msgid "Click here for more information."
-msgstr ""
+msgstr "Klicka här för att läsa mer..."
 
 #: ckanext/sokigo/templates/package/resource_read.html:97
 msgid "Here are some reasons you may not be seeing expected views:"
-msgstr ""
+msgstr "Några möjliga orsaker till att du inte ser förväntade vyer är:"
 
 #: ckanext/sokigo/templates/package/resource_read.html:99
 msgid "No view has been created that is suitable for this resource"
-msgstr ""
+msgstr "Ingen vy har skapats som är lämplig för den här resursen."
 
 #: ckanext/sokigo/templates/package/resource_read.html:100
 msgid "The site administrators may not have enabled the relevant view plugins"
-msgstr ""
+msgstr "Administratörerna har inte aktiverat rätt plugin för vyerna"
 
 #: ckanext/sokigo/templates/package/resource_read.html:101
 msgid ""
@@ -96,36 +110,117 @@ msgid ""
 "enabled, or the data may not have been pushed to the DataStore, or the "
 "DataStore hasn't finished processing the data yet"
 msgstr ""
+"Om en vy kräver DataStore så kanske denna plugin inte aktiverats. "
+"Alternativt har inte data levererats till DataStore eller också är DataStore"
+" inte klar med bearbetningen av data"
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:14
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:6
 msgid "Source"
-msgstr ""
+msgstr "Källa"
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:25
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
+msgid "Metadata Owner Email"
+msgstr "E-post till etadataägare"
+
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:30
-msgid "Author"
-msgstr ""
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:14
+msgid "Metadata Owner"
+msgstr "Metadataägare"
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:37
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
+msgid "Metadata Contact Email"
+msgstr "E-post till metadatakontakt"
+
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:42
-msgid "Maintainer"
-msgstr ""
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:20
+msgid "Metadata Contact"
+msgstr "Metadatakontakt"
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:49
+#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:10
 msgid "Version"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:56
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:114
 msgid "State"
-msgstr ""
+msgstr "Status"
 
 #: ckanext/sokigo/templates/package/snippets/additional_info.html:62
 msgid "Last Updated"
+msgstr "Senast uppdaterad"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:4
+msgid "Title"
+msgstr "Titel"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:4
+msgid "eg. A descriptive title"
+msgstr "t.ex. en beskrivande titel"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:13
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:26
+msgid "URL"
 msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/tags.html:3
-msgid "Categories and keywords"
-msgstr "Ämnesområde och nyckelord"
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:13
+msgid "eg. my-dataset"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:19
+msgid "Abstract"
+msgstr "Sammanfattning"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:19
+msgid "eg. Some useful notes about the data"
+msgstr "t.ex. Några rader om datasetet"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:24
+msgid "Tags"
+msgstr "Nyckelord"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:24
+msgid "eg. economy, mental health, government"
+msgstr "t.ex. ekonomi, psykisk hälsa, offentlig sektor"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:45
+msgid ""
+" License definitions and additional information can be found at <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
+msgstr ""
+" Licensdefinitioner och mer information finns på <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:76
+msgid "Organization"
+msgstr "Organisation"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:80
+msgid "No organization"
+msgstr "Ingen organisation"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:95
+msgid "Visibility"
+msgstr "Synlighet"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:98
+msgid "Private"
+msgstr "Privat"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:98
+msgid "Public"
+msgstr "Offentlig"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:117
+msgid "Active"
+msgstr "Aktiv"
+
+#: ckanext/sokigo/templates/package/snippets/package_basic_fields.html:118
+msgid "Deleted"
+msgstr "Raderad"
 
 #: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:6
 msgid "http://example.com/dataset.json"
@@ -141,74 +236,167 @@ msgid "Joe Bloggs"
 msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
-msgid "Author Email"
-msgstr ""
-
-#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:16
 #: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
 msgid "joe@example.com"
 msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:22
-msgid "Maintainer Email"
-msgstr ""
-
 #: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:26
 msgid "Language of metadata"
-msgstr "Språk i metadata"
+msgstr ""
 
 #: ckanext/sokigo/templates/package/snippets/package_metadata_fields.html:26
 msgid "Language"
+msgstr "Språk"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:26
+msgid "Data"
 msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:7
-msgid "Language of resource"
-msgstr "Språk i resurs"
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:26
+msgid "http://example.com/external-data.csv"
+msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:11
-msgid "Completeness"
-msgstr "Fullständighet"
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:30
+msgid "Resource Name"
+msgstr "Resursnamn"
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:15
-msgid "Classification"
-msgstr "Klassificering"
-
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:19
-msgid "Update frequency"
-msgstr "Uppdateringsfrekvens"
-
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:19
-msgid "update frequency"
-msgstr "Uppdateringsfrekvens"
-
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:24
-msgid "Area"
-msgstr "Område"
-
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:29
-msgid "Coordinate system"
-msgstr "Koordinatsystem"
-
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:29
-msgid "coordinate system"
-msgstr "Koordinatsystem"
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:30
+msgid "eg. January 2011 Gold Prices"
+msgstr "t.ex. Guldpriser januari 2011"
 
 #: ckanext/sokigo/templates/package/snippets/resource_form.html:34
+msgid "Resource Abstract"
+msgstr "Resurssammanfattning"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:34
+msgid "Some useful notes about the data"
+msgstr "Beskrivande information om datasetet"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:39
+msgid "eg. CSV, XML or JSON"
+msgstr "t.ex. CSV, XML or JSON"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+msgid "This will be guessed automatically. Leave blank if you wish"
+msgstr ""
+"Här kommer en automatisk gissning att läggas in. Lämna blankt om du vill"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:48
+msgid "Language of resource"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:52
+msgid "Completeness"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:56
+msgid "Classification"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:60
+msgid "Update frequency"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:60
+msgid "update frequency"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:65
+msgid "Area"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:70
+msgid "Coordinate system"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:70
+msgid "coordinate system"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:75
 msgid "Scale factor"
-msgstr "Skalfaktor"
+msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:38
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:79
 msgid "Z-Min"
-msgstr "Z-Min"
+msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:38
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:79
 msgid "z-min"
-msgstr "Z-Min"
+msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:83
 msgid "Z-Max"
-msgstr "Z-Max"
+msgstr ""
 
-#: ckanext/sokigo/templates/package/snippets/resource_form.html:42
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:83
 msgid "z-max"
-msgstr "Z-Max"
+msgstr ""
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:93
+msgid "Last Modified"
+msgstr "Senast ändrad"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:93
+msgid "eg. 2012-06-05"
+msgstr "t.ex. 2012-06-05"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:95
+msgid "File Size"
+msgstr "Filstorlek"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:95
+msgid "eg. 1024"
+msgstr "t.ex. 1024"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:97
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:99
+msgid "MIME Type"
+msgstr "MIME-typ"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:97
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:99
+msgid "eg. application/json"
+msgstr "t.ex. application/json"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:107
+msgid "Are you sure you want to delete this resource?"
+msgstr "Vill du verkligen radera denna grupp?"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:107
+msgid "Delete"
+msgstr "Radera"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:113
+msgid "Previous"
+msgstr "Föregående"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:116
+msgid "Save & add another"
+msgstr "Spara och lägg till nästa"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:119
+msgid "Finish"
+msgstr "Slutför"
+
+#: ckanext/sokigo/templates/package/snippets/resource_form.html:123
+msgid "Add"
+msgstr "Lägg till"
+
+#: ckanext/sokigo/templates/package/snippets/tags.html:3
+msgid "Categories and keywords"
+msgstr "Ämnesområde och nyckelord"
+
+#: ckanext/sokigo/templates/snippets/custom_form_fields.html:20
+#: ckanext/sokigo/templates/snippets/custom_form_fields.html:37
+msgid "Custom Field"
+msgstr "Eget fält"
+
+#: ckanext/sokigo/templates/snippets/custom_form_fields.html:24
+msgid "Key"
+msgstr "Namn"
+
+#: ckanext/sokigo/templates/snippets/custom_form_fields.html:36
+msgid "Custom Value"
+msgstr "Värde"
+
