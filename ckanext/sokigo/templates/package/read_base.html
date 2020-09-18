@@ -6,6 +6,11 @@
 {% block content_action %}
     {{ super() }}
 
+    {% set dataset_extent = h.get_pkg_dict_extra(c.pkg_dict, 'spatial', '') %}
+    {% if dataset_extent %}
+        {% snippet "spatial/snippets/dataset_map_sidebar.html", extent=dataset_extent %}
+    {% endif %}
+
     {% if h.check_access('package_update', {'id':pkg.id }) %}
         {% link_for _('Copy'), controller='ckanext.sokigo.controller:CopyController', action='copy', id=pkg.name, class_='btn btn-success', icon='copy' %}
     {% endif %}
